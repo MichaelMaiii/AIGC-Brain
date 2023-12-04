@@ -21,6 +21,7 @@ AIGC in Non-Invasive Brain Decoding. Sensory perception including visual stimuli
 
 This project is associated with our survey paper which comprehensively contextualizes the advance of AIGC in Non-invasive Brain Decoding by formulating taxonomies according to model architectures and AIGC-Brain tasks.
 
+<img src='Result-IBI.png' align="center">
 
 [//]: # (<img src='logo.png' align="center" width=20> **Multimodal Image Synthesis and Editing: The Generative AI Era [[Paper]&#40;https://arxiv.org/abs/2112.13592&#41;]  [[Project]&#40;https://fnzhan.com/Generative-AI/&#41;]**  <br>)
 
