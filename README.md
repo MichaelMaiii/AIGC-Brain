@@ -17,6 +17,7 @@ Generative AI in Non-Invasive Brain Decoding: A Survey and Taxonomy
 
 <img src='AIGC-Brain.png' align="center">
 AIGC in Non-Invasive Brain Decoding. Sensory perception including visual stimuli (image (I) and video (V)) and audio stimuli (music (M) and speech/sound (S)) from the external world is converted into neural signals (EEG, fMRI, or MEG). The AIGC-Brain decoder decodes brain signals for various tasks, i.e., Image-Brain-Image (IBI), Video-Brain-Video (VBV), Sound-Brain-Sound (SBS), Music-Brain-Music (MBM), Image-Brain-Text (IBT), Video-Brain-Text (VBT), and Speech-Brain-Text (SBT).
+<br>
 
 This project is associated with our survey paper which comprehensively contextualizes the advance of AIGC in Non-invasive Brain Decoding by formulating taxonomies according to model architectures and AIGC-Brain tasks.
 
