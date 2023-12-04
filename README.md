@@ -823,12 +823,11 @@ CVPRW 2023
 ## Citation
 If you use this code for your research, please cite our papers.
 ```bibtex
-@inproceedings{zhan2023mise,
-  title={Multimodal Image Synthesis and Editing: The Generative AI Era},
-  author={Zhan, Fangneng and Yu, Yingchen and Wu, Rongliang and Zhang, Jiahui and Lu, Shijian and Liu, Lingjie and Kortylewski, Adam and Theobalt, Christian and Xing, Eric},
-  booktitle={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  year={2023},
-  publisher={IEEE}
+@article{mai2023unibrain,
+  title={Unibrain: Unify image reconstruction and captioning all in one diffusion model from human brain activity},
+  author={Mai, Weijian and Zhang, Zhijun},
+  journal={arXiv preprint arXiv:2308.07428},
+  year={2023}
 }
 ```
 
