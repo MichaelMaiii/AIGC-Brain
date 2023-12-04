@@ -16,36 +16,54 @@ Generative AI in Non-Invasive Brain Decoding: A Survey and Taxonomy
 <be>
 
 <img src='AIGC-Brain.png' align="center">
+AIGC in Non-Invasive Brain Decoding. Sensory perception including visual stimuli (image (I) and video (V)) and audio stimuli (music (M) and speech/sound (S)) from the external world is converted into neural signals (EEG, fMRI, or MEG). The AIGC-Brain decoder decodes brain signals for various tasks, i.e., Image-Brain-Image (IBI), Video-Brain-Video (VBV), Sound-Brain-Sound (SBS), Music-Brain-Music (MBM), Image-Brain-Text (IBT), Video-Brain-Text (VBT), and Speech-Brain-Text (SBT).
+
+This project is associated with our survey paper which comprehensively contextualizes the advance of AIGC in Non-invasive Brain Decoding by formulating taxonomies according to model architectures and AIGC-Brain tasks.
 
 
-This project is associated with our survey paper which comprehensively contextualizes the advance of Multimodal Image 
-Synthesis \& Editing (MISE) and visual AIGC by formulating taxonomies according to data modality and model architectures.
+[//]: # (<img src='logo.png' align="center" width=20> **Multimodal Image Synthesis and Editing: The Generative AI Era [[Paper]&#40;https://arxiv.org/abs/2112.13592&#41;]  [[Project]&#40;https://fnzhan.com/Generative-AI/&#41;]**  <br>)
 
+[//]: # ([Fangneng Zhan]&#40;https://fnzhan.com/&#41;, [Yingchen Yu]&#40;https://yingchen001.github.io/&#41;, [Rongliang Wu]&#40;https://scholar.google.com.sg/citations?user=SZkh3iAAAAAJ&hl=en&#41;, [Jiahui Zhang]&#40;https://scholar.google.com/citations?user=DXpYbWkAAAAJ&hl=zh-CN&#41;, [Shijian Lu]&#40;https://scholar.google.com.sg/citations?user=uYmK-A0AAAAJ&hl=en&#41;, [Lingjie Liu]&#40;https://lingjie0206.github.io/&#41;, [Adam Kortylewsk]&#40;https://generativevision.mpi-inf.mpg.de/&#41;, <br> [Christian Theobalt]&#40;https://people.mpi-inf.mpg.de/~theobalt/&#41;, [Eric Xing]&#40;http://www.cs.cmu.edu/~epxing/&#41; <br>)
 
-<img src='logo.png' align="center" width=20> **Multimodal Image Synthesis and Editing: The Generative AI Era [[Paper](https://arxiv.org/abs/2112.13592)]  [[Project](https://fnzhan.com/Generative-AI/)]**  <br>
-[Fangneng Zhan](https://fnzhan.com/), [Yingchen Yu](https://yingchen001.github.io/), [Rongliang Wu](https://scholar.google.com.sg/citations?user=SZkh3iAAAAAJ&hl=en), [Jiahui Zhang](https://scholar.google.com/citations?user=DXpYbWkAAAAJ&hl=zh-CN), [Shijian Lu](https://scholar.google.com.sg/citations?user=uYmK-A0AAAAJ&hl=en), [Lingjie Liu](https://lingjie0206.github.io/), [Adam Kortylewsk](https://generativevision.mpi-inf.mpg.de/), <br> [Christian Theobalt](https://people.mpi-inf.mpg.de/~theobalt/), [Eric Xing](http://www.cs.cmu.edu/~epxing/) <br>
-*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2023*
+[//]: # (*IEEE Transactions on Pattern Analysis and Machine Intelligence &#40;TPAMI&#41;, 2023*)
 
-<!---[DeepAI](https://deepai.org/publication/multimodal-image-synthesis-and-editing-a-survey).**-->
+[//]: # ()
+[//]: # (<!---[DeepAI]&#40;https://deepai.org/publication/multimodal-image-synthesis-and-editing-a-survey&#41;.**-->)
 
-<br>
+[//]: # ()
+[//]: # (<br>)
 
-[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com) 
-You are welcome to promote papers via pull request. <br>
-The process to submit a pull request:
-- a. Fork the project into your own repository.
-- b. Add the Title, Author, Conference, Paper link, Project link, and Code link in `README.md` with below format:
-```
-**Title**<br>
-*Author*<br>
-Conference
-[[Paper](Paper link)]
-[[Code](Project link)]
-[[Project](Code link)]
-```
-- c. Submit the pull request to this branch.
+[//]: # ()
+[//]: # ([![PR's Welcome]&#40;https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&#41;]&#40;http://makeapullrequest.com&#41; )
 
-<br>
+[//]: # (You are welcome to promote papers via pull request. <br>)
+
+[//]: # (The process to submit a pull request:)
+
+[//]: # (- a. Fork the project into your own repository.)
+
+[//]: # (- b. Add the Title, Author, Conference, Paper link, Project link, and Code link in `README.md` with below format:)
+
+[//]: # (```)
+
+[//]: # (**Title**<br>)
+
+[//]: # (*Author*<br>)
+
+[//]: # (Conference)
+
+[//]: # ([[Paper]&#40;Paper link&#41;])
+
+[//]: # ([[Code]&#40;Project link&#41;])
+
+[//]: # ([[Project]&#40;Code link&#41;])
+
+[//]: # (```)
+
+[//]: # (- c. Submit the pull request to this branch.)
+
+[//]: # ()
+[//]: # (<br>)
 
 
 **Methods:**
