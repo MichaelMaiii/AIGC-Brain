@@ -1,5 +1,5 @@
-# AIGC-Brain
-AIGC in Non-Invasive Brain Decoding: A Survey and Taxonomy
+# GAI-Brain
+Generative AI in Non-Invasive Brain Decoding: A Survey and Taxonomy
 <!-- !# <p align=center> AIGC in Non-Invasive Brain Decoding: <br> A Survey and Taxonomy</p> -->
 
 [//]: # (<img src='AIGC-Brain.png' align="center">)
