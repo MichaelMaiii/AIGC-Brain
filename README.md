@@ -1,5 +1,5 @@
 # AIGC-Brain
-#### Generative AI in Brain-Conditional Multimodal Synthesis: A Survey and Taxonomy
+#### Brain-Conditional Multimodal Synthesis: A Survey and Taxonomy
 
 [//]: # (Generative AI in Non-Invasive Brain Perception Decoding: A Survey and Taxonomy)
 <!-- !# <p align=center> AIGC in Non-Invasive Brain Decoding: <br> A Survey and Taxonomy</p> -->
