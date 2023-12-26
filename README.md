@@ -1,6 +1,8 @@
 # AIGC-Brain
 #### Brain-Conditional Multimodal Synthesis: A Survey and Taxonomy
 
+This project is associated with our survey paper which comprehensively examines the emerging field of AIGC-based brain-conditional multimodal synthesis, termed AIGC-Brain, to delineate the current landscape and future directions.
+
 [//]: # (Generative AI in Non-Invasive Brain Perception Decoding: A Survey and Taxonomy)
 <!-- !# <p align=center> Brain-Conditional Multimodal Synthesis: <br> A Survey and Taxonomy</p> -->
 [//]: # (<img src='AIGC-Brain.png' align="center">)
@@ -21,8 +23,8 @@ Brain-Conditional Multimodal Synthesis via AIGC-Brain Decoder. Sensory stimuli c
 <br>
 
 [//]: # (This project is associated with our survey paper which comprehensively contextualizes the advance of AIGC in Non-invasive Brain Decoding by formulating taxonomies according to model architectures and AIGC-Brain tasks.)
-This project is associated with our survey paper which comprehensively examines the emerging field of AIGC-based brain-conditional multimodal synthesis, termed AIGC-Brain, to delineate the current landscape and future directions.
 <img src='Result-IBI.png' align="center">
+Qualitative Results for AIGC-Brain Tasks. A: IBI results on GOD (left) and EEG-VOA (right) datasets; B: IBI and IBT results on NSD dataset; C: VBV results on DNV dataset; D: VBT (top) and SBT (bottom) results based on CLSR; F: MBM results based on Brain2Music; G: SBS results based on BSR.
 
 [//]: # (<img src='logo.png' align="center" width=20> **Multimodal Image Synthesis and Editing: The Generative AI Era [[Paper]&#40;https://arxiv.org/abs/2112.13592&#41;]  [[Project]&#40;https://fnzhan.com/Generative-AI/&#41;]**  <br>)
 
