@@ -1,8 +1,8 @@
 # AIGC-Brain
-#### Generative AI in Brain-Conditional Multimodal Synthesis: A Survey and Taxonomy
+#### Brain-Conditional Multimodal Synthesis: A Survey and Taxonomy
 
 [//]: # (Generative AI in Non-Invasive Brain Perception Decoding: A Survey and Taxonomy)
-<!-- !# <p align=center> AIGC in Non-Invasive Brain Decoding: <br> A Survey and Taxonomy</p> -->
+<!-- !# <p align=center> Brain-Conditional Multimodal Synthesis: <br> A Survey and Taxonomy</p> -->
 [//]: # (<img src='AIGC-Brain.png' align="center">)
 
 <br>
@@ -17,11 +17,11 @@
 <be>
 
 <br><img src='AIGC-Brain.png' align="center">
-Generative AI (AIGC, a.k.a AI-generated content) in Brain-Conditional Multimodal Synthesis. Sensory perception including visual stimuli (image (I) and video (V)) and audio stimuli (music (M) and speech/sound (S)) from the external world is converted into neural signals (EEG, fMRI, or MEG). The AIGC-Brain decoder decodes brain signals for various tasks, i.e., Image-Brain-Image (IBI), Video-Brain-Video (VBV), Sound-Brain-Sound (SBS), Music-Brain-Music (MBM), Image-Brain-Text (IBT), Video-Brain-Text (VBT), and Speech-Brain-Text (SBT).
+Brain-Conditional Multimodal Synthesis via AIGC-Brain Decoder. Sensory stimuli comprising visual stimuli (Image (I), Video (V)) and audio stimuli (Music (M), Speech/Sound (S)) from the external world are first encoded to non-invasive brain signals (EEG, fMRI, or MEG) and then decoded back to perceptual experience via the AIGC-Brain decoder. This survey focuses on passive brain-conditional multimodal synthesis tasks including Image-Brain-Image (IBI), Video-Brain-Video (VBV), Sound-Brain-Sound (SBS), Music-Brain-Music (MBM), Image-Brain-Text (IBT), Video-Brain-Text (VBT), and Speech-Brain-Text (SBT), where IBI refers to image synthesis tasks conditioned on brain signals evoked by image stimuli.
 <br>
 
-This project is associated with our survey paper which comprehensively contextualizes the advance of AIGC in Non-invasive Brain Decoding by formulating taxonomies according to model architectures and AIGC-Brain tasks.
-
+[//]: # (This project is associated with our survey paper which comprehensively contextualizes the advance of AIGC in Non-invasive Brain Decoding by formulating taxonomies according to model architectures and AIGC-Brain tasks.)
+This project is associated with our survey paper which comprehensively examines the emerging field of AIGC-based brain-conditional multimodal synthesis, termed AIGC-Brain, to delineate the current landscape and future directions.
 <img src='Result-IBI.png' align="center">
 
 [//]: # (<img src='logo.png' align="center" width=20> **Multimodal Image Synthesis and Editing: The Generative AI Era [[Paper]&#40;https://arxiv.org/abs/2112.13592&#41;]  [[Project]&#40;https://fnzhan.com/Generative-AI/&#41;]**  <br>)
@@ -89,6 +89,7 @@ This project is associated with our survey paper which comprehensively contextua
 *Weihao Xia, Raoul de Charette, Cengiz Öztireli, Jing-Hao Xue*<br>
 arXiv 2023.10
 [[Paper](https://arxiv.org/abs/2310.02265)]
+[[Code](https://github.com/weihaox/DREAM)]
 [[Project](https://weihaox.github.io/DREAM/)] <br>
 Dataset [[NSD](#fmri-image)] <br>
 <font color=#FF0000 >(New) Diffusion (Mapping) + CNN(RGBD) + Contrastive(CLIP)</font> 
