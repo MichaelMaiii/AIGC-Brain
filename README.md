@@ -157,7 +157,7 @@ Dataset [[NSD](#fmri-image)] [[GOD](#fmri-image)]<br>
 
 
 
-**(SBN-ICGAN) Decoding natural image stimuli from fMRI data with a surface-based convolutional network**<br>
+**(BrainSCN) Decoding natural image stimuli from fMRI data with a surface-based convolutional network**<br>
 *Zijin Gu, Keith Jamison, Amy Kuceyeski, Mert Sabuncu*<br>
 MIDL 2023
 [[Paper](https://arxiv.org/abs/2212.02409)]
@@ -183,21 +183,21 @@ Bioengineering 2023
 Dataset [[GOD](#fmri-image)]<br>
 <font color=#FF0000 >New</font>
 
-**(VQ-VAE) Rethinking Visual Reconstruction: Experience-Based Content Completion Guided by Visual Cues**<br>
+**(VQ-fMRI) Rethinking Visual Reconstruction: Experience-Based Content Completion Guided by Visual Cues**<br>
 *Jiaxuan Chen, Yu Qi, Gang Pan*<br>
 ICML 2023
 [[Paper](https://openreview.net/forum?id=l3sdNQdmQh)] <br>
 Dataset [[GOD](#fmri-image)] <br>
 <font color=#FF0000 >VQ-VAE</font>
 
-**(H-VAE) Generative Decoding of Visual Stimuli**<br>
+**(BrainHVAE) Generative Decoding of Visual Stimuli**<br>
 *Eleni Miliotou, Panagiotis Kyriakis, Jason D Hinman, Andrei Irimia, Paul Bogdan*<br>
 ICML 2023
 [[Paper](https://openreview.net/forum?id=57OuafQmu8)] <br>
 Dataset [[GOD](#fmri-image)] <br>
 <font color=#FF0000 >Hierarchical VAE</font>
 
-**(IC-GAN) Reconstruction of Perceived Images from fMRI Patterns and Semantic Brain Exploration using Instance-Conditioned GANs**<br>
+**(BrainICG) Reconstruction of Perceived Images from fMRI Patterns and Semantic Brain Exploration using Instance-Conditioned GANs**<br>
 *Furkan Ozcelik, Bhavin Choksi, Milad Mozafari, Leila Reddy, Rufin VanRullen*<br>
 IJCNN 2022
 [[Paper](https://ieeexplore.ieee.org/abstract/document/9892673)]
@@ -205,13 +205,12 @@ IJCNN 2022
 Dataset [[GOD](#fmri-image)]<br>
 <font color=#FF0000 >IC-GAN + Ridge Regression (Mapping)</font>
 
-**(HS-GAN) Semantics-guided hierarchical feature encoding generative adversarial network for natural image reconstruction from brain activities**<br>
+**(BrainHSG) Semantics-guided hierarchical feature encoding generative adversarial network for natural image reconstruction from brain activities**<br>
 *Lu Meng, Chuanhao Yang*<br>
 IJCNN 2023
 [[Paper](https://ieeexplore.ieee.org/abstract/document/10191903)] <br>
 Dataset [[GOD](#fmri-image)]<br>
 <font color=#FF0000 >Hierarchical-Semantic GAN + Lightweight DNN (Mapping)</font>
-
 
 **(SBD) Semantic Brain Decoding: from fMRI to conceptually similar image reconstruction of visual stimuli**<br>
 *Matteo Ferrante, Tommaso Boccato, Nicola Toschi*<br>
@@ -242,7 +241,7 @@ arxiv 2023
 Dataset [[HCP](#fmri-pretrain)]  [[GOD](#fmri-image)]  [[BLOD5000](#fmri-image)]<br>
 <font color=#FF0000 >Double-contrastive MAE (pretrain) + Cross Modality Attention + Diffusion (Fix) & MAE (Finetune)</font>
 
-**(SS-NIR) From voxels to pixels and back: Self-supervision in natural-image reconstruction from fMRI**<br>
+**(SSNIR) From voxels to pixels and back: Self-supervision in natural-image reconstruction from fMRI**<br>
 *Roman Beliy, Guy Gaziv, Assaf Hoogi, Francesca Strappini, Tal Golan, Michal Irani*<br>
 NeurIPS 2019
 [[Paper](https://proceedings.neurips.cc/paper_files/paper/2019/hash/7d2be41b1bde6ff8fe45150c37488ebb-Abstract.html)]
@@ -251,15 +250,7 @@ NeurIPS 2019
 Dataset [[GOD](#fmri-image)] [[Vim-1](#fmri-image)]<br>
 <font color=#FF0000 >CNN-Based Encoder-Decoder</font>
 
-**(RGBD) More Than Meets the Eye: Self-Supervised Depth Reconstruction From Brain Activity**<br>
-*Guy Gaziv, Michal Irani*<br>
-arXiv 2021
-[[Paper](https://arxiv.org/abs/2106.05113)]
-[[Code](https://github.com/WeizmannVision/SelfSuperReconst)] <br>
-Dataset [[GOD](#fmri-image)] [[Vim-1](#fmri-image)]<br>
-<font color=#FF0000 >CNN-Based Encoder-Decoder</font>
-
-**(SS-NIR2) Self-supervised Natural Image Reconstruction and Large-scale Semantic Classification from Brain Activity**<br>
+**(SS-NIRSC) Self-supervised Natural Image Reconstruction and Large-scale Semantic Classification from Brain Activity**<br>
 *Guy Gaziv, Roman Beliy, Niv Granot, Assaf Hoogi, Francesca Strappini, Tal Golan, Michal Irani*<br>
 NeuroImage 2022
 [[Paper](https://www.sciencedirect.com/science/article/pii/S105381192200249X)]
@@ -267,7 +258,15 @@ NeuroImage 2022
 Dataset [[GOD](#fmri-image)] [[Vim-1](#fmri-image)]<br>
 <font color=#FF0000 >CNN-Based Encoder-Decoder</font>
 
-**(SS-GAN) Reconstructing Perceptive Images from Brain Activity by Shape-Semantic GAN**<br>
+**(SSDR) More Than Meets the Eye: Self-Supervised Depth Reconstruction From Brain Activity**<br>
+*Guy Gaziv, Michal Irani*<br>
+arXiv 2021
+[[Paper](https://arxiv.org/abs/2106.05113)]
+[[Code](https://github.com/WeizmannVision/SelfSuperReconst)] <br>
+Dataset [[GOD](#fmri-image)] [[Vim-1](#fmri-image)]<br>
+<font color=#FF0000 >CNN-Based Encoder-Decoder</font>
+
+**(BrainSSG) Reconstructing Perceptive Images from Brain Activity by Shape-Semantic GAN**<br>
 *Tao Fang, Yu Qi, Gang Pan*<br>
 NeurIPS 2020
 [[Paper](https://proceedings.neurips.cc/paper/2020/hash/9813b270ed0288e7c0388f0fd4ec68f5-Abstract.html)]
@@ -275,21 +274,21 @@ NeurIPS 2020
 Dataset [[GOD](#fmri-image)]]<br>
 <font color=#FF0000 >GAN (Image-to-Image Translation: Image-to-image translation with conditional adversarial networks) + Linear (Low-Mapping) + DNN (High-Mapping)</font>
 
-**(BigBiGAN) Reconstructing Natural Scenes from fMRI Patterns using BigBiGAN**<br>
+**(BrainBBG) Reconstructing Natural Scenes from fMRI Patterns using BigBiGAN**<br>
 *Milad Mozafari, Leila Reddy, Rufin VanRullen*<br>
 IJCNN 2020
 [[Paper](https://ieeexplore.ieee.org/abstract/document/9206960)] <br>
 Dataset [[GOD](#fmri-image)] <br>
 <font color=#FF0000 >BigBiGAN + Linear Regression (Mapping)</font>
 
-**(D-VAE-GAN) Reconstructing seen image from brain activity by visually-guided cognitive representation and adversarial learning**<br>
+**(BrainDVG) Reconstructing seen image from brain activity by visually-guided cognitive representation and adversarial learning**<br>
 *Ziqi Ren, Jie Li, Xuetong Xue, Xin Li, Fan Yang, Zhicheng Jiao, Xinbo Gao*<br>
 NeuroImage 2021
 [[Paper](https://www.sciencedirect.com/science/article/pii/S1053811920310879)] <br>
 Dataset [[GOD](#fmri-image)] [[BRAINS](#fmri-image)] [[BCP](#fmri-image)] [[6-9](#fmri-image)]<br>
 <font color=#FF0000 >Dual-VAE + GAN</font>
 
-**(DC-GAN) Generative adversarial networks for reconstructing natural images from brain activity**<br>
+**(BrainDCG) Generative adversarial networks for reconstructing natural images from brain activity**<br>
 *K. Seeliger, U. Güçlü, L. Ambrogioni, Y. Güçlütürk, M.A.J. van Gerven*<br>
 NeuroImage 2018
 [[Paper](https://www.sciencedirect.com/science/article/pii/S105381191830658X)]
@@ -299,7 +298,7 @@ Dataset [[GOD](#fmri-image)] [[Vim-1](#fmri-image)] [[BRAINS](#fmri-image)]<br>
 
 ----------------------------------------------------------------------------------------------------
 
-**(Dataset&Method) Deep image reconstruction from human brain activity**<br>
+**(DIR) Deep image reconstruction from human brain activity**<br>
 *Guohua Shen, Tomoyasu Horikawa, Kei Majima, Yukiyasu Kamitani*<br>
 PLOS Computational Biology 2019
 [[Paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006633)]
