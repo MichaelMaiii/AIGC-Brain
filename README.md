@@ -13,14 +13,14 @@ This project is associated with our survey paper which comprehensively examines 
 Brain-Conditional Multimodal Synthesis via AIGC-Brain Decoder. Sensory stimuli comprising visual stimuli (Image (I), Video (V)) and audio stimuli (Music (M), Speech/Sound (S)) from the external world are first encoded to non-invasive brain signals (EEG, fMRI, or MEG) and then decoded back to perceptual experience via the AIGC-Brain decoder. This survey focuses on passive brain-conditional multimodal synthesis tasks including Image-Brain-Image (IBI), Video-Brain-Video (VBV), Sound-Brain-Sound (SBS), Music-Brain-Music (MBM), Image-Brain-Text (IBT), Video-Brain-Text (VBT), and Speech-Brain-Text (SBT), where IBI refers to image synthesis tasks conditioned on brain signals evoked by image stimuli.
 <br>
 
-<img src='Result-IBI.png' align="center">
+<img src='Result.png' align="center">
 Qualitative Results for AIGC-Brain Tasks. A: IBI results on GOD (left) and EEG-VOA (right) datasets; B: IBI and IBT results on NSD dataset; C: VBV results on DNV dataset; D: VBT (top) and SBT (bottom) results based on CLSR; F: MBM results based on Brain2Music; G: SBS results based on BSR.
 
 <br>
 
 ## Table of Contents (Work in Progress)
 
-**AIGC-Brain Tasks:**
+**AIGC-Brain Tasks & Implementations:**
 <!-- ### Tasks: -->
 - [Image-Brain-Image (Image Reconstruction)](#image-brain-image)
   - [IBI-fMRI](#ibi-fmri)
