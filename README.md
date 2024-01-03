@@ -349,7 +349,7 @@ Dataset [[EEG-VOA](#eeg-image)]<br>
 *Yohann Benchetrit1, Hubert Banville1, Jean-Remi King*<br>
 arXiv 2023
 [[Paper](https://arxiv.org/abs/2310.19812)] <br>
-Dataset [[Things-MEG](#meg-image)]<br>
+Dataset [[MEG-Things](#meg-image)]<br>
 <font color=#FF0000 >Diffusion</font>
 
 ## Image-Brain-Image&Text
@@ -377,7 +377,7 @@ arxiv 2023
 [[Paper](https://arxiv.org/abs/2305.11675)]
 [[Code](https://github.com/jqin4749/MindVideo)]
 [[Project](https://mind-video.com/)] <br>
-Dataset [[Wen](#fmri-video)] [[HCP](#fmri-image)]<br>
+Dataset [[DNV](#fmri-video)] [[HCP](#fmri-image)]<br>
 <font color=#FF0000 >MAE (Pretrain) + CLIP-Image-Text (Contrastive-Align) + Diffusion (Finetune)</font>
 
 **(SSRNM) A Penny for Your (visual) Thoughts: Self-Supervised Reconstruction of Natural Movies from Brain Activity**<br>
@@ -385,30 +385,22 @@ Dataset [[Wen](#fmri-video)] [[HCP](#fmri-image)]<br>
 arxiv 2022
 [[Paper](https://arxiv.org/abs/2206.03544)]
 [[Project](https://www.wisdom.weizmann.ac.il/~vision/VideoReconstFromFMRI/)] <br>
-Dataset [[Wen](#fmri-video)]<br>
+Dataset [[DNV](#fmri-video)]<br>
 <font color=#FF0000 >CNN-based Encoder-Decoder + Self-supervised</font>
 
 **(f-CVGAN) Reconstructing rapid natural vision with fMRI-conditional video generative adversarial network**<br>
 *Chong Wang, Hongmei Yan, Wei Huang, Jiyi Li, Yuting Wang, Yun-Shuang Fan, Wei Sheng, Tao Liu, Rong Li, Huafu Chen*<br>
 Cerebral Cortex 2022
 [[Paper](https://academic.oup.com/cercor/article-abstract/32/20/4502/6515038)] <br>
-Dataset [[Wen](#fmri-video)] [[HCP](#fmri-pretrain)] <br>
+Dataset [[DNV](#fmri-video)] [[HCP](#fmri-pretrain)] <br>
 <font color=#FF0000 >GAN</font>
 
 **(BrainViVAE) Variational autoencoder: An unsupervised model for encoding and decoding fMRI activity in visual cortex**<br>
 *Kuan Han, Haiguang Wen, Junxing Shi, Kun-Han Lu, Yizhen Zhang, Di Fu, Zhongming Liu*<br>
 NeuroImage 2019
 [[Paper](https://www.sciencedirect.com/science/article/pii/S1053811919304318)] <br>
-Dataset [[Wen](#fmri-video)]<br>
+Dataset [[DNV](#fmri-video)]<br>
 <font color=#FF0000 >VAE</font>
-
-**Brain2Pix: Fully convolutional naturalistic video reconstruction from brain activity**<br>
-*Lynn Le, Luca Ambrogioni, Katja Seeliger, Yağmur Güçlütürk, Marcel van Gerven, Umut Güçlü*<br>
-Frontiers in Neuroscience 2022
-[[Paper](https://www.frontiersin.org/articles/10.3389/fnins.2022.940972/full)]
-[[Code](https://github.com/neuralcodinglab/brain2pix)] <br>
-Dataset [[Seeliger](#fmri-video)]<br>
-<font color=#FF0000 >GAN</font>
 
 **(DNV) Neural Encoding and Decoding with Deep Learning for Dynamic Natural Vision**<br>
 *Haiguang Wen, Junxing Shi, Yizhen Zhang, Kun-Han Lu, Jiayue Cao, Zhongming Liu*<br>
@@ -417,6 +409,14 @@ Cerebral Cortex 2018
 [[Data](https://purr.purdue.edu/publications/2809/1)] <br>
 Dataset [[DNV](#fmri-video)]<br>
 <font color=#FF0000 >Deconvolution</font>
+
+**Brain2Pix: Fully convolutional naturalistic video reconstruction from brain activity**<br>
+*Lynn Le, Luca Ambrogioni, Katja Seeliger, Yağmur Güçlütürk, Marcel van Gerven, Umut Güçlü*<br>
+Frontiers in Neuroscience 2022
+[[Paper](https://www.frontiersin.org/articles/10.3389/fnins.2022.940972/full)]
+[[Code](https://github.com/neuralcodinglab/brain2pix)] <br>
+Dataset [[STNS](#fmri-video)]<br>
+<font color=#FF0000 >GAN</font>
 
 --------------------------------------------------------------------------------------
 
@@ -448,7 +448,7 @@ arxiv 2023
 Dataset [[MusicGenre](#fmri-music)]<br>
 <font color=#FF0000 >MusicLM (SoundStream: CNN Encoder-Decoder with Residual Vector Quantizer (RVQ)</font>
 
-**(MusicAffect) Neural decoding of music from the EEG**<br>
+**(NDMusic) Neural decoding of music from the EEG**<br>
 *Ian Daly*<br>
 Scientific Reports 2023
 [[Paper](https://www.nature.com/articles/s41598-022-27361-x)] <br>
@@ -779,10 +779,8 @@ CVPRW 2023
 
 <br>
 
-
-
 ## Citation
-If you use this code for your research, please cite our papers.
+If you use this project for your research, please cite our papers.
 ```bibtex
 @article{mai2023unibrain,
   title={Unibrain: Unify image reconstruction and captioning all in one diffusion model from human brain activity},
