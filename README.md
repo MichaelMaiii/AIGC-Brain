@@ -2,90 +2,39 @@
 #### Brain-Conditional Multimodal Synthesis: A Survey and Taxonomy
 
 This project is associated with our survey paper which comprehensively examines the emerging field of AIGC-based brain-conditional multimodal synthesis, termed AIGC-Brain, to delineate the current landscape and future directions.
-
-[//]: # (Generative AI in Non-Invasive Brain Perception Decoding: A Survey and Taxonomy)
-<!-- !# <p align=center> Brain-Conditional Multimodal Synthesis: <br> A Survey and Taxonomy</p> -->
-[//]: # (<img src='AIGC-Brain.png' align="center">)
-
 <br>
 
-[![arXiv](https://img.shields.io/badge/arXiv-2107.05399-b31b1b.svg)](https://arxiv.org/abs/2112.13592)
-[![Survey](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) 
+[![arXiv](https://img.shields.io/badge/arXiv-2401.00430-b31b1b.svg)](https://arxiv.org/abs/2401.00430)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) 
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com) 
 [![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
-<!-- [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org) -->
-<!-- [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest) -->
-<be>
 
 <br><img src='AIGC-Brain.png' align="center">
 Brain-Conditional Multimodal Synthesis via AIGC-Brain Decoder. Sensory stimuli comprising visual stimuli (Image (I), Video (V)) and audio stimuli (Music (M), Speech/Sound (S)) from the external world are first encoded to non-invasive brain signals (EEG, fMRI, or MEG) and then decoded back to perceptual experience via the AIGC-Brain decoder. This survey focuses on passive brain-conditional multimodal synthesis tasks including Image-Brain-Image (IBI), Video-Brain-Video (VBV), Sound-Brain-Sound (SBS), Music-Brain-Music (MBM), Image-Brain-Text (IBT), Video-Brain-Text (VBT), and Speech-Brain-Text (SBT), where IBI refers to image synthesis tasks conditioned on brain signals evoked by image stimuli.
 <br>
 
-[//]: # (This project is associated with our survey paper which comprehensively contextualizes the advance of AIGC in Non-invasive Brain Decoding by formulating taxonomies according to model architectures and AIGC-Brain tasks.)
 <img src='Result-IBI.png' align="center">
 Qualitative Results for AIGC-Brain Tasks. A: IBI results on GOD (left) and EEG-VOA (right) datasets; B: IBI and IBT results on NSD dataset; C: VBV results on DNV dataset; D: VBT (top) and SBT (bottom) results based on CLSR; F: MBM results based on Brain2Music; G: SBS results based on BSR.
 
-[//]: # (<img src='logo.png' align="center" width=20> **Multimodal Image Synthesis and Editing: The Generative AI Era [[Paper]&#40;https://arxiv.org/abs/2112.13592&#41;]  [[Project]&#40;https://fnzhan.com/Generative-AI/&#41;]**  <br>)
-
-[//]: # ([Fangneng Zhan]&#40;https://fnzhan.com/&#41;, [Yingchen Yu]&#40;https://yingchen001.github.io/&#41;, [Rongliang Wu]&#40;https://scholar.google.com.sg/citations?user=SZkh3iAAAAAJ&hl=en&#41;, [Jiahui Zhang]&#40;https://scholar.google.com/citations?user=DXpYbWkAAAAJ&hl=zh-CN&#41;, [Shijian Lu]&#40;https://scholar.google.com.sg/citations?user=uYmK-A0AAAAJ&hl=en&#41;, [Lingjie Liu]&#40;https://lingjie0206.github.io/&#41;, [Adam Kortylewsk]&#40;https://generativevision.mpi-inf.mpg.de/&#41;, <br> [Christian Theobalt]&#40;https://people.mpi-inf.mpg.de/~theobalt/&#41;, [Eric Xing]&#40;http://www.cs.cmu.edu/~epxing/&#41; <br>)
-
-[//]: # (*IEEE Transactions on Pattern Analysis and Machine Intelligence &#40;TPAMI&#41;, 2023*)
-
-[//]: # ()
-[//]: # (<!---[DeepAI]&#40;https://deepai.org/publication/multimodal-image-synthesis-and-editing-a-survey&#41;.**-->)
-
-[//]: # ()
-[//]: # (<br>)
-
-[//]: # ()
-[//]: # ([![PR's Welcome]&#40;https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&#41;]&#40;http://makeapullrequest.com&#41; )
-
-[//]: # (You are welcome to promote papers via pull request. <br>)
-
-[//]: # (The process to submit a pull request:)
-
-[//]: # (- a. Fork the project into your own repository.)
-
-[//]: # (- b. Add the Title, Author, Conference, Paper link, Project link, and Code link in `README.md` with below format:)
-
-[//]: # (```)
-
-[//]: # (**Title**<br>)
-
-[//]: # (*Author*<br>)
-
-[//]: # (Conference)
-
-[//]: # ([[Paper]&#40;Paper link&#41;])
-
-[//]: # ([[Code]&#40;Project link&#41;])
-
-[//]: # ([[Project]&#40;Code link&#41;])
-
-[//]: # (```)
-
-[//]: # (- c. Submit the pull request to this branch.)
-
-[//]: # ()
-[//]: # (<br>)
-
-
 **Methods:**
 <!-- ### Methods: -->
-- [Image-Brain-Image](#image-brain-image)
+- [Image-Brain-Image (Image Reconstruction)](#image-brain-image)
   - [IBI-fMRI](#ibi-fmri)
   - [IBI-EEG](#ibi-eeg)
   - [IBI-MEG](#ibi-meg)
-- [Image-Brain-Text](#image-brain-text)
-- [Image-Brain-Image&Text](#image-brain-image--text)
-- [Video-Brain-Video](#video-brain-video)
-- [Sound-Brain-Sound](#sound-brain-sound)
-- [Speech-Brain-Text](#speech-brain-text)
-- [Video&Speech-Brain-Text](#speech-brain-text)
-- [Music-Brain-Music](#music-brain-music)
-
-- [Imagery](#imagery)
+- [Image-Brain-Text (Image Captioning)](#image-brain-text)
+- [Image-Brain-Image&Text (Image Reconstruction & Captioning)](#image-brain-image--text)
+- [Video-Brain-Video (Video Reconstruction)](#video-brain-video)
+- [Speech-Brain-Text (Semantic Reconstruction)](#speech-brain-text)
+- [Video&Speech-Brain-Text (Video Captioning & Semantic Reconstruction)](#speech-brain-text)
+- [Sound-Brain-Sound (Sound Reconstruction)](#sound-brain-sound)
+- [Music-Brain-Music (Music Reconstruction)](#music-brain-music)
+- [Active Tasks](#active-tasks)
+  - [Brain-to-Image (Visual-Imagery)](#brain-to-image)
+  - [Brain-to-Text (Text-Reading)](#brain-to-text)
+- [Invasive Tasks](#invasive-tasks)
+  - [Brain-to-Speech](#brain-to-speech)
+  - [Brain-to-music](#brain-to-music)
 
 
 ## Image-Brain-Image
@@ -590,28 +539,20 @@ Dataset [[Daly](#fmri-eeg-music--eeg-music)]<br>
 
 -------------------------------------------------------------------------------
 
-## Imagery
-**Mental image reconstruction from human brain activity**<br>
-*Naoko Koide-Majima, Shinji Nishimoto, Kei Majima*<br>
-bioRxiv 2023
-[[Paper](https://www.biorxiv.org/content/10.1101/2023.01.22.525062v2.abstract)]
-[[Code](https://github.com/nkmjm/mental_img_recon)] <br>
-Dataset [[DIR](#fmri-image)] <br>
-<font color=#FF0000 >Non-Generative (Bayesian estimation)</font>
+## Active Tasks
 
+### Brain-to-Image
 **ThoughtViz: Visualizing Human Thoughts Using Generative Adversarial Network**<br>
 *Praveen Tirupattur, Yogesh Singh Rawat, Concetto Spampinato, Mubarak Shah*<br>
 ACM MM 2018
 [[Paper](https://dl.acm.org/doi/10.1145/3240508.3240641)] <br>
 Dataset [[EEG-Imagery](#eeg-image)]<br>
-<font color=#FF0000 >GAN + CNN (Senmatic Feature)</font>
 
 **NeuroGAN: image reconstruction from EEG signals via an attention-based GAN**<br>
 *Rahul Mishra, Krishan Sharma, R. R. Jha, Arnav Bhavsar*<br>
 Neural Computing and Applications 2023
 [[Paper](https://link.springer.com/article/10.1007/s00521-022-08178-1)] <br>
 Dataset [[EEG-Imagery](#eeg-image)]<br>
-<font color=#FF0000 >GAN</font>
 
 **EEG2IMAGE: Image Reconstruction from EEG Brain Signals**<br>
 *Prajwal Singh, Pankaj Pandey, Krishna Miyapuram, Shanmuganathan Raman*<br>
@@ -619,7 +560,28 @@ ICASSP 2023
 [[Paper](https://arxiv.org/abs/2302.10121)]
 [[Code](https://github.com/prajwalsingh/EEG2Image)] <br>
 Dataset [[EEG-Imagery](#eeg-image)]<br>
-<font color=#FF0000 >GAN + LSTM (Senmatic Feature)</font>
+
+### Brain-to-Text
+**Dewave: Discrete eeg waves encoding for brain dynamics to text translation**<br>
+*Yiqun Duan, Jinzhao Zhou, Zhen Wang, Yu-Kai Wang, Chin-Teng Lin*<br>
+NeurIPS 2023
+[[Paper](https://arxiv.org/abs/2309.14030)] <br>
+
+------------------------------------------------------------------------------------
+
+## Invasive Tasks
+
+### Brain-to-Speech
+**Speech synthesis from neural decoding of spoken sentences**<br>
+*Gopala K. Anumanchipalli, Josh Chartier & Edward F. Chang*<br>
+Nature 2019
+[[Paper](https://www.nature.com/articles/s41586-019-1119-1.)] <br>
+
+### Brain-to-Music
+**Music can be reconstructed from human auditory cortex activity using nonlinear decoding models**<br>
+*Ludovic Bellier, Anaïs Llorens, et al.*<br>
+PLOS Biology 2023
+[[Paper](https://journals.plos.org/plosbiology/)] <br>
 
 ------------------------------------------------------------------------------------
 
