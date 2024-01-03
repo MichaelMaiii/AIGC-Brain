@@ -297,49 +297,49 @@ Dataset [[Faces](#fmri-image)]<br>
 arxiv 2023
 [[Paper](https://arxiv.org/abs/2306.16934)]
 [[Code](https://github.com/bbaaii/DreamDiffusion)] <br>
-Dataset [[EEG-ImageNet](#eeg-image)] <br>
+Dataset [[EEG-VOA](#eeg-image)] <br>
 <font color=#FF0000 >MAE (Pretrain) + Diffusion (Finetune) + CLIP-Image (Mapping)</font>
 
 **(NeuroImagen) Seeing through the Brain: Image Reconstruction of Visual Perception from Human Brain Signals**<br>
 *Yu-Ting Lan, Kan Ren, Yansen Wang, Wei-Long Zheng, Dongsheng Li, Bao-Liang Lu, Lili Qiu*<br>
 arxiv 2023
 [[Paper](https://arxiv.org/abs/2308.02510)] <br>
-Dataset [[EEG-ImageNet](#eeg-image)]<br>
+Dataset [[EEG-VOA](#eeg-image)]<br>
 <font color=#FF0000 >Diffusion + CLIP-Text (Mapping) + Low-level Image (Mapping) </font>
 
 **DM-RE2I: A framework based on diffusion model for the reconstruction from EEG to image**<br>
 *Hong Zeng, Nianzhang Xia, Dongguan Qian, Motonobu Hattori, Chu Wang, Wanzeng Kong*<br>
 BSPC 2023
 [[Paper](https://www.sciencedirect.com/science/article/pii/S174680942300558X)] <br>
-Dataset [[EEG-ImageNet](#eeg-image)]<br>
+Dataset [[EEG-VOA](#eeg-image)]<br>
 <font color=#FF0000 >Diffusion + EVRNet (Semantic Feature)</font>
 
 **Brain2Image: Converting Brain Signals into Images**<br>
 *Isaak Kavasidis, Simone Palazzo, Concetto Spampinato, Daniela Giordano, Mubarak Shah*<br>
 ACM MM 2017
 [[Paper](https://www.sciencedirect.com/science/article/pii/S174680942300558X)] <br>
-Dataset [[EEG-ImageNet](#eeg-image)]<br>
+Dataset [[EEG-VOA](#eeg-image)]<br>
 <font color=#FF0000 >VAE/GAN + LSTM (Semantic Feature)</font>
 
 **NeuroVision: perceived image regeneration using cProGAN**<br>
 *Sanchita Khare, Rajiv Nayan Choubey, Loveleen Amar, Venkanna Udutalapalli*<br>
 Neural Computing and Applications 2022
 [[Paper](https://link.springer.com/article/10.1007/s00521-021-06774-1)] <br>
-Dataset [[EEG-ImageNet](#eeg-image)]<br>
+Dataset [[EEG-VOA](#eeg-image)]<br>
 <font color=#FF0000 >Conditional ProGAN + LSTM&GRU (Semantic Feature)</font>
 
 **(EEG-VGD) Decoding EEG by Visual-guided Deep Neural Networks**<br>
 *Zhicheng Jiao, Haoxuan You, Fan Yang, Xin Li, Han Zhang, Dinggang Shen*<br>
 IJCAI 2019
 [[Paper](https://www.ijcai.org/proceedings/2019/192)] <br>
-Dataset [[EEG-ImageNet](#eeg-image)]<br>
+Dataset [[EEG-VOA](#eeg-image)]<br>
 <font color=#FF0000 >Visual-Guided GAN + CNN (Semantic Feature)</font>
 
 **(EEG-GAN) Generative Adversarial Networks Conditioned by Brain Signals**<br>
 *Simone Palazzo, Concetto Spampinato, Isaak Kavasidis, Daniela Giordano, Mubarak Shah*<br>
 ICCV 2017
 [[Paper](https://openaccess.thecvf.com/content_iccv_2017/html/Palazzo_Generative_Adversarial_Networks_ICCV_2017_paper.html)] <br>
-Dataset [[EEG-ImageNet](#eeg-image)]<br>
+Dataset [[EEG-VOA](#eeg-image)]<br>
 <font color=#FF0000 >Conditional GAN + LSTM (Semantic Feature)</font>
 
 --------------------------------------------------------------------------------------
@@ -580,6 +580,12 @@ PLOS Biology 2023
 NeuroImage 2013
 [[Paper](https://www.sciencedirect.com/science/article/pii/S1053811913005351)]
 [[Project](https://www.humanconnectome.org/study/hcp-young-adult/document/1200-subjects-data-release)]
+
+**(MOABB) MOABB: trustworthy algorithm benchmarking for BCIs**<br>
+*Vinay Jayaram, Alexandre Barachant*<br>
+Journal of Neural Engineering 2018
+[[Paper](https://iopscience.iop.org/article/10.1088/1741-2552/aadea0/meta)]
+[[Project](https://github.com/NeuroTechX/moabb)]
 
 ------------------------------------------------------------------------------------
 
