@@ -16,25 +16,31 @@ Brain-Conditional Multimodal Synthesis via AIGC-Brain Decoder. Sensory stimuli c
 <img src='Result-IBI.png' align="center">
 Qualitative Results for AIGC-Brain Tasks. A: IBI results on GOD (left) and EEG-VOA (right) datasets; B: IBI and IBT results on NSD dataset; C: VBV results on DNV dataset; D: VBT (top) and SBT (bottom) results based on CLSR; F: MBM results based on Brain2Music; G: SBS results based on BSR.
 
-**Methods:**
-<!-- ### Methods: -->
+<br>
+
+## Table of Contents (Work in Progress)
+
+**AIGC-Brain Tasks:**
+<!-- ### Tasks: -->
 - [Image-Brain-Image (Image Reconstruction)](#image-brain-image)
   - [IBI-fMRI](#ibi-fmri)
   - [IBI-EEG](#ibi-eeg)
   - [IBI-MEG](#ibi-meg)
-- [Image-Brain-Text (Image Captioning)](#image-brain-text)
-- [Image-Brain-Image&Text (Image Reconstruction & Captioning)](#image-brain-image--text)
+- [Image-Brain-Image&Text (Image&Semantic Reconstruction)](#image-brain-imagetext)
 - [Video-Brain-Video (Video Reconstruction)](#video-brain-video)
-- [Speech-Brain-Text (Semantic Reconstruction)](#speech-brain-text)
-- [Video&Speech-Brain-Text (Video Captioning & Semantic Reconstruction)](#speech-brain-text)
 - [Sound-Brain-Sound (Sound Reconstruction)](#sound-brain-sound)
 - [Music-Brain-Music (Music Reconstruction)](#music-brain-music)
+- [Image&Video&Speech-Brain-Text (Semantic Reconstruction)](#imagevideospeech-brain-text)
+  - [Image-Brain-Text](#image-brain-text)
+  - [Speech-Brain-Text](#speech-brain-text)
+  - [Video&Speech-Brain-Text](#videospeech-brain-text)
 - [Active Tasks](#active-tasks)
   - [Brain-to-Image (Visual-Imagery)](#brain-to-image)
-  - [Brain-to-Text (Text-Reading)](#brain-to-text)
+  - [Brain-to-Text (Subvocal-Reading)](#brain-to-text)
 - [Invasive Tasks](#invasive-tasks)
   - [Brain-to-Speech](#brain-to-speech)
   - [Brain-to-music](#brain-to-music)
+- [Neuroimaging Dataset](#neuroimaging-dataset)
 
 
 ## Image-Brain-Image
@@ -124,14 +130,45 @@ CVPR 2023
 [[Paper](https://arxiv.org/abs/2211.06956)]
 [[Code](https://github.com/zjc062/mind-vis)]
 [[Project](https://mind-vis.github.io/)] <br>
-Dataset [[HCP](#fmri-pretrain)]  [[GOD](#fmri-image)]  [[BLOD5000](#fmri-image)] <br>
+Dataset [[HCP](#fmri-pretrain)]  [[GOD](#fmri-image)]  [[BLOD](#fmri-image)] <br>
 <font color=#FF0000 >MAE (Pretrain) + Stable Diffusion (Finetune)</font>
+
+**(LEA) Joint fMRI Decoding and Encoding with Latent Embedding Alignment**<br>
+*Xuelin Qian, Yikai Wang, Yanwei Fu, Xinwei Sun, Xiangyang Xue, Jianfeng Feng*<br>
+arxiv 2023
+[[Paper](https://arxiv.org/abs/2303.14730)] <br>
+Dataset [[HCP](#fmri-pretrain)]  [[GOD](#fmri-image)]  [[BLOD](#fmri-image)]<br>
+<font color=#FF0000 >MAE (pretrain) + CLIP-Image & Class-Conditional MaskGit (Masked generative image transformer) + Ridge Regression (Mapping)</font>
+
+**(CMVDM) Controllable Mind Visual Diffusion Model**<br>
+*Bohan Zeng, Shanglin Li, Xuhui Liu, Sicheng Gao, Xiaolong Jiang, Xu Tang, Yao Hu, Jianzhuang Liu, Baochang Zhang*<br>
+arxiv 2023
+[[Paper](https://arxiv.org/abs/2305.10135)] <br>
+Dataset [[HCP](#fmri-pretrain)]  [[GOD](#fmri-image)]  [[BLOD](#fmri-image)]<br>
+<font color=#FF0000 >MAE (pretrain) + Diffusion (Finetune) + ControlNet</font>
+
+**(CAD) Contrast, Attend and Diffuse to Decode High-Resolution Images from Brain Activities**<br>
+*Jingyuan Sun, Mingxiao Li, Zijiao Chen, Yunhao Zhang, Shaonan Wang, Marie-Francine Moens*<br>
+arxiv 2023
+[[Paper](https://arxiv.org/abs/2305.17214)] <br>
+Dataset [[HCP](#fmri-pretrain)]  [[GOD](#fmri-image)]  [[BLOD](#fmri-image)]<br>
+<font color=#FF0000 >Double-contrastive MAE (pretrain) + Cross Modality Attention + Diffusion (Fix) & MAE (Finetune)</font>
+
+----------------------------------------------------------------------------------------------------
+
+**(BrainICG) Reconstruction of Perceived Images from fMRI Patterns and Semantic Brain Exploration using Instance-Conditioned GANs**<br>
+*Furkan Ozcelik, Bhavin Choksi, Milad Mozafari, Leila Reddy, Rufin VanRullen*<br>
+IJCNN 2022
+[[Paper](https://ieeexplore.ieee.org/abstract/document/9892673)]
+[[Code](https://github.com/ozcelikfu/IC-GAN_fMRI_Reconstruction)] <br>
+Dataset [[GOD](#fmri-image)]<br>
+<font color=#FF0000 >IC-GAN + Ridge Regression (Mapping)</font>
 
 **(DBDM) Dual-Guided Brain Diffusion Model: Natural Image Reconstruction from Human Visual Stimulus fMRI**<br>
 *Lu Meng, Chuanhao Yang*<br>
 Bioengineering 2023
-[[Paper](https://www.mdpi.com/2306-5354/10/10/1117)]
-Dataset [[GOD](#fmri-image)]<br>
+[[Paper](https://www.mdpi.com/2306-5354/10/10/1117)] <br>
+Dataset [[GOD](#fmri-image)] <br>
 <font color=#FF0000 >New</font>
 
 **(VQ-fMRI) Rethinking Visual Reconstruction: Experience-Based Content Completion Guided by Visual Cues**<br>
@@ -148,14 +185,6 @@ ICML 2023
 Dataset [[GOD](#fmri-image)] <br>
 <font color=#FF0000 >Hierarchical VAE</font>
 
-**(BrainICG) Reconstruction of Perceived Images from fMRI Patterns and Semantic Brain Exploration using Instance-Conditioned GANs**<br>
-*Furkan Ozcelik, Bhavin Choksi, Milad Mozafari, Leila Reddy, Rufin VanRullen*<br>
-IJCNN 2022
-[[Paper](https://ieeexplore.ieee.org/abstract/document/9892673)]
-[[Code](https://github.com/ozcelikfu/IC-GAN_fMRI_Reconstruction)] <br>
-Dataset [[GOD](#fmri-image)]<br>
-<font color=#FF0000 >IC-GAN + Ridge Regression (Mapping)</font>
-
 **(BrainHSG) Semantics-guided hierarchical feature encoding generative adversarial network for natural image reconstruction from brain activities**<br>
 *Lu Meng, Chuanhao Yang*<br>
 IJCNN 2023
@@ -171,27 +200,6 @@ arxiv 2023
 Dataset [[GOD](#fmri-image)]<br>
 <font color=#FF0000 >Class-Conditional Diffusion + Ridge Regression (Mapping)</font>
 
-**(LEA) Joint fMRI Decoding and Encoding with Latent Embedding Alignment**<br>
-*Xuelin Qian, Yikai Wang, Yanwei Fu, Xinwei Sun, Xiangyang Xue, Jianfeng Feng*<br>
-arxiv 2023
-[[Paper](https://arxiv.org/abs/2303.14730)] <br>
-Dataset [[HCP](#fmri-pretrain)]  [[GOD](#fmri-image)]  [[BLOD5000](#fmri-image)]<br>
-<font color=#FF0000 >MAE (pretrain) + CLIP-Image & Class-Conditional MaskGit (Masked generative image transformer) + Ridge Regression (Mapping)</font>
-
-**(CMVDM) Controllable Mind Visual Diffusion Model**<br>
-*Bohan Zeng, Shanglin Li, Xuhui Liu, Sicheng Gao, Xiaolong Jiang, Xu Tang, Yao Hu, Jianzhuang Liu, Baochang Zhang*<br>
-arxiv 2023
-[[Paper](https://arxiv.org/abs/2305.10135)] <br>
-Dataset [[HCP](#fmri-pretrain)]  [[GOD](#fmri-image)]  [[BLOD5000](#fmri-image)]<br>
-<font color=#FF0000 >MAE (pretrain) + Diffusion (Finetune) + ControlNet</font>
-
-**(CAD) Contrast, Attend and Diffuse to Decode High-Resolution Images from Brain Activities**<br>
-*Jingyuan Sun, Mingxiao Li, Zijiao Chen, Yunhao Zhang, Shaonan Wang, Marie-Francine Moens*<br>
-arxiv 2023
-[[Paper](https://arxiv.org/abs/2305.17214)] <br>
-Dataset [[HCP](#fmri-pretrain)]  [[GOD](#fmri-image)]  [[BLOD5000](#fmri-image)]<br>
-<font color=#FF0000 >Double-contrastive MAE (pretrain) + Cross Modality Attention + Diffusion (Fix) & MAE (Finetune)</font>
-
 **(SSNIR) From voxels to pixels and back: Self-supervision in natural-image reconstruction from fMRI**<br>
 *Roman Beliy, Guy Gaziv, Assaf Hoogi, Francesca Strappini, Tal Golan, Michal Irani*<br>
 NeurIPS 2019
@@ -201,7 +209,7 @@ NeurIPS 2019
 Dataset [[GOD](#fmri-image)] [[Vim-1](#fmri-image)]<br>
 <font color=#FF0000 >CNN-Based Encoder-Decoder</font>
 
-**(SS-NIRSC) Self-supervised Natural Image Reconstruction and Large-scale Semantic Classification from Brain Activity**<br>
+**(SSNIR-SC) Self-supervised Natural Image Reconstruction and Large-scale Semantic Classification from Brain Activity**<br>
 *Guy Gaziv, Roman Beliy, Niv Granot, Assaf Hoogi, Francesca Strappini, Tal Golan, Michal Irani*<br>
 NeuroImage 2022
 [[Paper](https://www.sciencedirect.com/science/article/pii/S105381192200249X)]
@@ -254,6 +262,7 @@ Dataset [[GOD](#fmri-image)] [[Vim-1](#fmri-image)] [[BRAINS](#fmri-image)]<br>
 PLOS Computational Biology 2019
 [[Paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006633)]
 [[Code](https://github.com/KamitaniLab/DeepImageReconstruction)]<br>
+Dataset [[DIR](#fmri-image)] <br>
 <font color=#FF0000 >GAN + Sparse Linear Regression (Mapping)</font>
 
 **(E-DIR) End-to-End Deep Image Reconstruction From Human Brain Activity**<br>
@@ -263,29 +272,21 @@ Frontiers in Computational Neuroscience 2019
 Dataset [[DIR](#fmri-image)]<br>
 <font color=#FF0000 >GAN</font>
 
-**(Reponse and Imagery) Mental image reconstruction from human brain activity**<br>
-*Naoko Koide-Majima, Shinji Nishimoto, Kei Majima*<br>
-bioRxiv 2023
-[[Paper](https://www.biorxiv.org/content/10.1101/2023.01.22.525062v2.abstract)]
-[[Code](https://github.com/nkmjm/mental_img_recon)] <br>
-Dataset [[DIR](#fmri-image)] <br>
-<font color=#FF0000 >Non-Generative (Bayesian estimation)</font>
-
 -----------------------------------------------------------------------------------------
 
-**(BigGAN) BigGAN-based Bayesian Reconstruction of Natural Images from Human Brain Activity**<br>
+**BigGAN-based Bayesian Reconstruction of Natural Images from Human Brain Activity**<br>
 *Kai Qiao, Jian Chen, Linyuan Wang, Chi Zhang, Li Tong, Bin Yan*<br>
 Neuroscience 2020
 [[Paper](https://www.sciencedirect.com/science/article/pii/S0306452220304814)] <br>
 Dataset [[Vim-1](#fmri-image)] <br>
 <font color=#FF0000 > BigGAN (Class-Conditional) + BLSTM (Mapping)</font>
 
-**(Dataset&Method) Reconstructing faces from fMRI patterns using deep generative neural networks**<br>
+**(Faces) Reconstructing faces from fMRI patterns using deep generative neural networks**<br>
 *Rufin VanRullen, Leila Reddy*<br>
 Communications Biology 2019
 [[Paper](https://www.nature.com/articles/s42003-019-0438-y)]
 [[Code](https://github.com/rufinv/VAE-GAN-celebA)] <br>
-Dataset [[Face](#fmri-image)]<br>
+Dataset [[Faces](#fmri-image)]<br>
 <font color=#FF0000 >VAE-GAN + Linear Regression (Mapping)</font>
 
 -----------------------------------------------------------------------------------------------------
@@ -327,7 +328,7 @@ Neural Computing and Applications 2022
 Dataset [[EEG-ImageNet](#eeg-image)]<br>
 <font color=#FF0000 >Conditional ProGAN + LSTM&GRU (Semantic Feature)</font>
 
-**(VG-GAN) Decoding EEG by Visual-guided Deep Neural Networks**<br>
+**(EEG-VGD) Decoding EEG by Visual-guided Deep Neural Networks**<br>
 *Zhicheng Jiao, Haoxuan You, Fan Yang, Xin Li, Han Zhang, Dinggang Shen*<br>
 IJCAI 2019
 [[Paper](https://www.ijcai.org/proceedings/2019/192)] <br>
@@ -344,16 +345,123 @@ Dataset [[EEG-ImageNet](#eeg-image)]<br>
 --------------------------------------------------------------------------------------
 
 ### IBI-MEG
-**BRAIN DECODING: TOWARD REAL-TIME RECONSTRUCTION OF VISUAL PERCEPTION**<br>
+**(MEG-BD) Brain decoding: toward real-time reconstruction of visual perception**<br>
 *Yohann Benchetrit1, Hubert Banville1, Jean-Remi King*<br>
 arXiv 2023
 [[Paper](https://arxiv.org/abs/2310.19812)] <br>
 Dataset [[Things-MEG](#meg-image)]<br>
 <font color=#FF0000 >Diffusion</font>
 
-## Image-Brain-Text
+## Image-Brain-Image&Text
+**UniBrain: Unify Image Reconstruction and Captioning All in One Diffusion Model from Human Brain Activity**<br>
+*Weijian Mai, Zhijun Zhang*<br>
+arxiv 2023
+[[Paper](https://arxiv.org/abs/2308.07428)] <br>
+Dataset [[NSD](#fmri-image)]<br>
+<font color=#FF0000 >Diffusion + Ridge Regression (Mapping)</font>
 
-### IBT-fMRI
+**Brain Captioning: Decoding human brain activity into images and text**<br>
+*Matteo Ferrante, Furkan Ozcelik, Tommaso Boccato, Rufin VanRullen, Nicola Toschi*<br>
+arxiv 2023
+[[Paper](https://arxiv.org/abs/2305.11560)] <br>
+Dataset [[NSD](#fmri-image)]<br>
+<font color=#FF0000 >Generative Image-to-text Transformer (GIT) + Diffusion + ControlNet + Linear Regression (Mapping)</font>
+
+--------------------------------------------------------------------------------------------
+
+## Video-Brain-Video
+
+**(Mind-Video) Cinematic Mindscapes: High-quality Video Reconstruction from Brain Activity**<br>
+*Zijiao Chen, Jiaxin Qing, Juan Helen Zhou*<br>
+arxiv 2023
+[[Paper](https://arxiv.org/abs/2305.11675)]
+[[Code](https://github.com/jqin4749/MindVideo)]
+[[Project](https://mind-video.com/)] <br>
+Dataset [[Wen](#fmri-video)] [[HCP](#fmri-image)]<br>
+<font color=#FF0000 >MAE (Pretrain) + CLIP-Image-Text (Contrastive-Align) + Diffusion (Finetune)</font>
+
+**(SSRNM) A Penny for Your (visual) Thoughts: Self-Supervised Reconstruction of Natural Movies from Brain Activity**<br>
+*Ganit Kupershmidt, Roman Beliy, Guy Gaziv, Michal Irani*<br>
+arxiv 2022
+[[Paper](https://arxiv.org/abs/2206.03544)]
+[[Project](https://www.wisdom.weizmann.ac.il/~vision/VideoReconstFromFMRI/)] <br>
+Dataset [[Wen](#fmri-video)]<br>
+<font color=#FF0000 >CNN-based Encoder-Decoder + Self-supervised</font>
+
+**(f-CVGAN) Reconstructing rapid natural vision with fMRI-conditional video generative adversarial network**<br>
+*Chong Wang, Hongmei Yan, Wei Huang, Jiyi Li, Yuting Wang, Yun-Shuang Fan, Wei Sheng, Tao Liu, Rong Li, Huafu Chen*<br>
+Cerebral Cortex 2022
+[[Paper](https://academic.oup.com/cercor/article-abstract/32/20/4502/6515038)] <br>
+Dataset [[Wen](#fmri-video)] [[HCP](#fmri-pretrain)] <br>
+<font color=#FF0000 >GAN</font>
+
+**(BrainViVAE) Variational autoencoder: An unsupervised model for encoding and decoding fMRI activity in visual cortex**<br>
+*Kuan Han, Haiguang Wen, Junxing Shi, Kun-Han Lu, Yizhen Zhang, Di Fu, Zhongming Liu*<br>
+NeuroImage 2019
+[[Paper](https://www.sciencedirect.com/science/article/pii/S1053811919304318)] <br>
+Dataset [[Wen](#fmri-video)]<br>
+<font color=#FF0000 >VAE</font>
+
+**Brain2Pix: Fully convolutional naturalistic video reconstruction from brain activity**<br>
+*Lynn Le, Luca Ambrogioni, Katja Seeliger, Yağmur Güçlütürk, Marcel van Gerven, Umut Güçlü*<br>
+Frontiers in Neuroscience 2022
+[[Paper](https://www.frontiersin.org/articles/10.3389/fnins.2022.940972/full)]
+[[Code](https://github.com/neuralcodinglab/brain2pix)] <br>
+Dataset [[Seeliger](#fmri-video)]<br>
+<font color=#FF0000 >GAN</font>
+
+**(DNV) Neural Encoding and Decoding with Deep Learning for Dynamic Natural Vision**<br>
+*Haiguang Wen, Junxing Shi, Yizhen Zhang, Kun-Han Lu, Jiayue Cao, Zhongming Liu*<br>
+Cerebral Cortex 2018
+[[Paper](https://academic.oup.com/cercor/article/28/12/4136/4560155)]
+[[Data](https://purr.purdue.edu/publications/2809/1)] <br>
+Dataset [[DNV](#fmri-video)]<br>
+<font color=#FF0000 >Deconvolution</font>
+
+--------------------------------------------------------------------------------------
+
+## Sound-Brain-Sound
+**(BSR) Sound reconstruction from human brain activity via a generative model with brain-like auditory features**<br>
+*Jong-Yun Park, Mitsuaki Tsukamoto, Misato Tanaka, Yukiyasu Kamitani*<br>
+arxiv 2023
+[[Paper](https://arxiv.org/abs/2306.11629)] <br>
+Dataset [[BSR](#fmri-soundspeech)] <br>
+<font color=#FF0000 >Audio-Generative Transformer + Ridge Regression (Mapping)</font>
+
+**(ETCAS) End-to-end translation of human neural activity to speech with a dual–dual generative adversarial network**<br>
+*Yina Guo, Ting Liu, Xiaofei Zhang, Anhong Wang, Wenwu Wang*<br>
+Knowledge-Based Systems 2023
+[[Paper](https://www.sciencedirect.com/science/article/pii/S0950705123005877)]
+[[Code](https://github.com/qwe1218088/dual-dualgan)] <br>
+Dataset [[ETCAS](#fmri-soundspeech)] <br>
+<font color=#FF0000 >Dual-DualGAN</font>
+
+--------------------------------------------------------------------------------------
+
+## Music-Brain-Music
+**Brain2Music: Reconstructing Music from Human Brain Activity**<br>
+*Timo I. Denk, Yu Takagi, Takuya Matsuyama, Andrea Agostinelli, Tomoya Nakai, Christian Frank, Shinji Nishimoto*<br>
+arxiv 2023
+[[Paper](https://arxiv.org/abs/2307.11078)]
+[[Project](https://google-research.github.io/seanet/brain2music/)]
+[[Data-MusicCaption](https://www.kaggle.com/datasets/nishimotolab/music-caption-brain2music)] <br>
+Dataset [[MusicGenre](#fmri-music)]<br>
+<font color=#FF0000 >MusicLM (SoundStream: CNN Encoder-Decoder with Residual Vector Quantizer (RVQ)</font>
+
+**(MusicAffect) Neural decoding of music from the EEG**<br>
+*Ian Daly*<br>
+Scientific Reports 2023
+[[Paper](https://www.nature.com/articles/s41598-022-27361-x)] <br>
+Dataset [[MusicAffect](#fmrieeg-music)]<br>
+<font color=#FF0000 >B-LSTM</font>
+
+-------------------------------------------------------------------------------
+
+## Image&Video&Speech-Brain-Text
+
+### Image-Brain-Text
+
+[//]: # (### IBT-fMRI)
 **DreamCatcher: Revealing the Language of the Brain with fMRI using GPT Embedding**<br>
 *Subhrasankar Chatterjee, Debasis Samanta*<br>
 arxiv 2023
@@ -386,131 +494,18 @@ Dataset [[OCD](#fmri-image)]<br>
 *Subhrasankar Chatterjee, Debasis Samanta*<br>
 ICSMC 2018
 [[Paper](https://ieeexplore.ieee.org/abstract/document/8616103)] <br>
-Dataset [[Nishimoto](#fmri-video)]<br>
+Dataset [[VER](#fmri-video)]<br>
 <font color=#FF0000 >LSTM + RidgeRegression/NN (Mapping)</font>
 
 **(GNLD) Generating Natural Language Descriptions for Semantic Representations of Human Brain Activity**<br>
 *Eri Matsuo, Ichiro Kobayashi, Shinji Nishimoto, Satoshi Nishida, Hideki Asoh*<br>
 ACL 2016 student research workshop 2016
 [[Paper](https://aclanthology.org/P16-3004/)] <br>
-Dataset [[Nishimoto](#fmri-video)]<br>
+Dataset [[VER](#fmri-video)]<br>
 <font color=#FF0000 >LSTM + RidgeRegression/NN (Mapping)</font>
 
---------------------------------------------------------------------------------------------
-
-## Image-Brain-Image&Text
-### IBIT-fMRI
-**UniBrain: Unify Image Reconstruction and Captioning All in One Diffusion Model from Human Brain Activity**<br>
-*Weijian Mai, Zhijun Zhang*<br>
-arxiv 2023
-[[Paper](https://arxiv.org/abs/2308.07428)] <br>
-Dataset [[NSD](#fmri-image)]<br>
-<font color=#FF0000 >Diffusion + Ridge Regression (Mapping)</font>
-
-**Brain Captioning: Decoding human brain activity into images and text**<br>
-*Matteo Ferrante, Furkan Ozcelik, Tommaso Boccato, Rufin VanRullen, Nicola Toschi*<br>
-arxiv 2023
-[[Paper](https://arxiv.org/abs/2305.11560)] <br>
-Dataset [[NSD](#fmri-image)]<br>
-<font color=#FF0000 >Generative Image-to-text Transformer (GIT) + Diffusion + ControlNet + Linear Regression (Mapping)</font>
-
---------------------------------------------------------------------------------------------
-
-## Video-Brain-Video
-
-### VBV-fMRI
-**Cinematic Mindscapes: High-quality Video Reconstruction from Brain Activity**<br>
-*Zijiao Chen, Jiaxin Qing, Juan Helen Zhou*<br>
-arxiv 2023
-[[Paper](https://arxiv.org/abs/2305.11675)]
-[[Code](https://github.com/jqin4749/MindVideo)]
-[[Project](https://mind-video.com/)] <br>
-Dataset [[Wen](#fmri-video)] [[HCP](#fmri-image)]<br>
-<font color=#FF0000 >MAE (Pretrain) + CLIP-Image-Text (Contrastive-Align) + Diffusion (Finetune)</font>
-
-**A Penny for Your (visual) Thoughts: Self-Supervised Reconstruction of Natural Movies from Brain Activity**<br>
-*Ganit Kupershmidt, Roman Beliy, Guy Gaziv, Michal Irani*<br>
-arxiv 2022
-[[Paper](https://arxiv.org/abs/2206.03544)]
-[[Project](https://www.wisdom.weizmann.ac.il/~vision/VideoReconstFromFMRI/)] <br>
-Dataset [[Wen](#fmri-video)]<br>
-<font color=#FF0000 >CNN-based Encoder-Decoder + Self-supervised</font>
-
-**(f-CVGAN) Reconstructing rapid natural vision with fMRI-conditional video generative adversarial network**<br>
-*Chong Wang, Hongmei Yan, Wei Huang, Jiyi Li, Yuting Wang, Yun-Shuang Fan, Wei Sheng, Tao Liu, Rong Li, Huafu Chen*<br>
-Cerebral Cortex 2022
-[[Paper](https://academic.oup.com/cercor/article-abstract/32/20/4502/6515038)] <br>
-Dataset [[Wen](#fmri-video)] [[HCP](#fmri-pretrain)] <br>
-<font color=#FF0000 >GAN</font>
-
-**Variational autoencoder: An unsupervised model for encoding and decoding fMRI activity in visual cortex**<br>
-*Kuan Han, Haiguang Wen, Junxing Shi, Kun-Han Lu, Yizhen Zhang, Di Fu, Zhongming Liu*<br>
-NeuroImage 2019
-[[Paper](https://www.sciencedirect.com/science/article/pii/S1053811919304318)] <br>
-Dataset [[Wen](#fmri-video)]<br>
-<font color=#FF0000 >VAE</font>
-
-**Brain2Pix: Fully convolutional naturalistic video reconstruction from brain activity**<br>
-*Lynn Le, Luca Ambrogioni, Katja Seeliger, Yağmur Güçlütürk, Marcel van Gerven, Umut Güçlü*<br>
-Frontiers in Neuroscience 2022
-[[Paper](https://www.frontiersin.org/articles/10.3389/fnins.2022.940972/full)]
-[[Code](https://github.com/neuralcodinglab/brain2pix)] <br>
-Dataset [[Seeliger](#fmri-video)]<br>
-<font color=#FF0000 >GAN</font>
-
-**(Dataset&Method) Neural Encoding and Decoding with Deep Learning for Dynamic Natural Vision**<br>
-*Haiguang Wen, Junxing Shi, Yizhen Zhang, Kun-Han Lu, Jiayue Cao, Zhongming Liu*<br>
-Cerebral Cortex 2018
-[[Paper](https://academic.oup.com/cercor/article/28/12/4136/4560155)]
-[[Data](https://purr.purdue.edu/publications/2809/1)] <br>
-Dataset [[Wen](#fmri-video)]<br>
-
-<font color=#FF0000 >Deconvolution</font>
-
 -----------------------------------------------------------------------------------------
-
-## Video&Speech-Brain-Text (Video-Captioning)
-**(CLSR) Semantic reconstruction of continuous language from non-invasive brain recordings**<br>
-*Jerry Tang, Amanda LeBel, Shailee Jain, Alexander G. Huth*<br>
-Nature Neuroscience 2023
-[[Paper](https://www.nature.com/articles/s41593-023-01304-9)]
-[[Code](https://github.com/HuthLab/semantic-decoding)]  <br>
-Dataset [[Tang](#fmri-video-speech)] <br>
-<font color=#FF0000 >GPT + Cross-Modal (transfer)</font>
-
-**(Cross-Modal Decoding) Brain encoding models based on multimodal transformers can transfer across language and vision**<br>
-*Jerry Tang, Meng Du, Vy A. Vo, Vasudev Lal, Alexander G. Huth*<br>
-arxiv 2023
-[[Paper](https://arxiv.org/abs/2305.12248)] <br>
-Dataset [[Tang](#fmri-video-speech)]
-
---------------------------------------------------------------------------------------
-
-## Sound-Brain-Sound
-**(BSR) Sound reconstruction from human brain activity via a generative model with brain-like auditory features**<br>
-*Jong-Yun Park, Mitsuaki Tsukamoto, Misato Tanaka, Yukiyasu Kamitani*<br>
-arxiv 2023
-[[Paper](https://arxiv.org/abs/2306.11629)] <br>
-<font color=#FF0000 >Audio-Generative Transformer + Ridge Regression (Mapping)</font>
-
-**(Dataset&Method) End-to-end translation of human neural activity to speech with a dual–dual generative adversarial network**<br>
-*Yina Guo, Ting Liu, Xiaofei Zhang, Anhong Wang, Wenwu Wang*<br>
-Knowledge-Based Systems 2023
-[[Paper](https://www.sciencedirect.com/science/article/pii/S0950705123005877)]
-[[Code](https://github.com/qwe1218088/dual-dualgan)] <br>
-<font color=#FF0000 >Dual-DualGAN</font>
-
---------------------------------------------------------------------------------------
-
-## Speech-Brain-Text (Semantic-Reconstruction)
-**(CLSR) Semantic reconstruction of continuous language from non-invasive brain recordings**<br>
-*Jerry Tang, Amanda LeBel, Shailee Jain, Alexander G. Huth*<br>
-Nature Neuroscience 2023
-[[Paper](https://www.nature.com/articles/s41593-023-01304-9)]
-[[Code](https://github.com/HuthLab/semantic-decoding)]  <br>
-Dataset [[CLSR](#fmri-video-speech)]<br>
-<font color=#FF0000 >GPT + Word Rate + Beam Search + Ridge Regression</font>
-
+### Speech-Brain-Text
 **UniCoRN: Unified Cognitive Signal ReconstructioN bridging cognitive signals and human language**<br>
 *Nuwa Xi, Sendong Zhao, Haochun Wang, Chi Liu, Bing Qin, Ting Liu*<br>
 arxiv 2023
@@ -520,24 +515,16 @@ Dataset [[Narratives](#fmri-speech)]<br>
 
 ----------------------------------------------------------------------------------------
 
-## Music-Brain-Music (Music-Reconstruction)
-**Brain2Music: Reconstructing Music from Human Brain Activity**<br>
-*Timo I. Denk, Yu Takagi, Takuya Matsuyama, Andrea Agostinelli, Tomoya Nakai, Christian Frank, Shinji Nishimoto*<br>
-arxiv 2023
-[[Paper](https://arxiv.org/abs/2307.11078)]
-[[Project](https://google-research.github.io/seanet/brain2music/)]
-[[Data-MusicCaption](https://www.kaggle.com/datasets/nishimotolab/music-caption-brain2music)] <br>
-Dataset [[MusicGenre](#fmri-music)]<br>
-<font color=#FF0000 >MusicLM (SoundStream: CNN Encoder-Decoder with Residual Vector Quantizer (RVQ)</font>
+### Video&Speech-Brain-Text
+**(CLSR) Semantic reconstruction of continuous language from non-invasive brain recordings**<br>
+*Jerry Tang, Amanda LeBel, Shailee Jain, Alexander G. Huth*<br>
+Nature Neuroscience 2023
+[[Paper](https://www.nature.com/articles/s41593-023-01304-9)]
+[[Code](https://github.com/HuthLab/semantic-decoding)]  <br>
+Dataset [[CLSR](#fmri-video-speech)] <br>
+<font color=#FF0000 >GPT + Cross-Modal (transfer)</font>
 
-**(Dataset&Method) Neural decoding of music from the EEG**<br>
-*Ian Daly*<br>
-Scientific Reports 2023
-[[Paper](https://www.nature.com/articles/s41598-022-27361-x)] <br>
-Dataset [[Daly](#fmri-eeg-music--eeg-music)]<br>
-<font color=#FF0000 >B-LSTM</font>
-
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 
 ## Active Tasks
 
@@ -719,6 +706,20 @@ Nature Neuroscience 2023
 -------------------------------------------------------------------------------------------------------
 
 ### fMRI-Sound&Speech
+**(BSR) Sound reconstruction from human brain activity via a generative model with brain-like auditory features**<br>
+*Jong-Yun Park, Mitsuaki Tsukamoto, Misato Tanaka, Yukiyasu Kamitani*<br>
+arxiv 2023
+[[Paper](https://arxiv.org/abs/2306.11629)] <br>
+<font color=#FF0000 >Audio-Generative Transformer + Ridge Regression (Mapping)</font>
+
+**(ETCAS) End-to-end translation of human neural activity to speech with a dual–dual generative adversarial network**<br>
+*Yina Guo, Ting Liu, Xiaofei Zhang, Anhong Wang, Wenwu Wang*<br>
+Knowledge-Based Systems 2023
+Dataset [[ETCAS](#fmri-soundspeech)] <br>
+[[Paper](https://www.sciencedirect.com/science/article/pii/S0950705123005877)]
+[[Code](https://github.com/qwe1218088/dual-dualgan)] <br>
+<font color=#FF0000 >Dual-DualGAN</font>
+
 **(Narratives) The “Narratives” fMRI dataset for evaluating models of naturalistic language comprehension**<br>
 *Samuel A. Nastase, Yun-Fei Liu, Hanna Hillman, Asieh Zadbood, Liat Hasenfratz, et al.*<br>
 Scientific Data 2021
@@ -737,7 +738,7 @@ Data in Brief 2022
 --------------------------------------------------------------------------------------------------------
 
 ### fMRI&EEG-Music
-**(Daly) Neural and physiological data from participants listening to affective music**<br>
+**(MusicAffect) Neural and physiological data from participants listening to affective music**<br>
 *Ian Daly, Nicoletta Nicolaou, Duncan Williams, Faustina Hwang, Alexis Kirke, Eduardo Miranda, Slawomir J. Nasuto *<br>
 Scientific Data 2020
 [[Paper](https://www.nature.com/articles/s41597-020-0507-6)]
@@ -772,18 +773,6 @@ CVPRW 2023
 
 <br>
 
-
-
-## Table of Contents (Work in Progress)
-**Methods:**
-<!-- ### Methods: -->
-- [Neural Rendering Methods](#Neural-rendering-Methods)
-- [Diffusion-based Methods](#Diffusion-based-Methods)
-- [Autoregressive Methods](#Autoregressive-Methods) 
-  - [Image Quantizer](#Image-Quantizer)
-- [GAN-based Methods](#GAN-based-Methods)
-  - [GAN-Inversion](#GAN-Inversion-Methods)
-- [Other Methods](#Other-Methods)
 
 
 ## Citation
