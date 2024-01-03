@@ -1,5 +1,5 @@
 # AIGC-Brain
-#### [Brain-Conditional Multimodal Synthesis: A Survey and Taxonomy](#https://arxiv.org/abs/2401.00430)
+#### [Brain-Conditional Multimodal Synthesis: A Survey and Taxonomy](https://arxiv.org/abs/2401.00430)
 
 This project is associated with our survey paper which comprehensively examines the emerging field of AIGC-based brain-conditional multimodal synthesis, termed AIGC-Brain, to delineate the current landscape and future directions.
 <br>
