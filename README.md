@@ -722,10 +722,10 @@ CVPRW 2023
 ## Citation
 If you use this project for your research, please cite our papers.
 ```bibtex
-@article{mai2023unibrain,
-  title={Unibrain: Unify image reconstruction and captioning all in one diffusion model from human brain activity},
-  author={Mai, Weijian and Zhang, Zhijun},
-  journal={arXiv preprint arXiv:2308.07428},
+@article{mai2023brain,
+  title={Brain-Conditional Multimodal Synthesis: A Survey and Taxonomy},
+  author={Mai, Weijian and Zhang, Jian and Fang, Pengfei and Zhang, Zhijun},
+  journal={arXiv preprint arXiv:2401.00430},
   year={2023}
 }
 ```
