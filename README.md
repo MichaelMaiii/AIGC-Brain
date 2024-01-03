@@ -14,7 +14,7 @@ Brain-Conditional Multimodal Synthesis via AIGC-Brain Decoder. Sensory stimuli c
 <br>
 
 <img src='Result.png' align="center">
-Qualitative Results for AIGC-Brain Tasks. A: IBI results on GOD (left) and EEG-VOA (right) datasets; B: IBI and IBT results on NSD dataset; C: VBV results on DNV dataset; D: VBT (top) and SBT (bottom) results based on CLSR; F: MBM results based on Brain2Music; G: SBS results based on BSR.
+Qualitative Results for AIGC-Brain Tasks. A: IBI results on GOD (left) and EEG-VOA (right) datasets; B: IBI and IBT results on NSD dataset; C: VBV results on DNV dataset; D: VBT (top) and SBT (bottom) results based on CLSR; E: MBM results based on Brain2Music; F: SBS results based on BSR.
 
 <br>
 
@@ -36,7 +36,7 @@ Qualitative Results for AIGC-Brain Tasks. A: IBI results on GOD (left) and EEG-V
   - [Video&Speech-Brain-Text](#videospeech-brain-text)
 - [Active Tasks](#active-tasks)
   - [Brain-to-Image (Visual-Imagery)](#brain-to-image)
-  - [Brain-to-Text (Subvocal-Reading)](#brain-to-text)
+  - [Brain-to-Text (Silent-Reading)](#brain-to-text)
 - [Invasive Tasks](#invasive-tasks)
   - [Brain-to-Speech](#brain-to-speech)
   - [Brain-to-music](#brain-to-music)
