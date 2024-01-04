@@ -314,6 +314,8 @@ arXiv 2023
 [[Paper](https://arxiv.org/abs/2310.19812)] <br>
 Dataset [[MEG-Things](#meg-image)]<br>
 
+--------------------------------------------------------------------------------------
+
 ## Image-Brain-Image&Text
 **UniBrain: Unify Image Reconstruction and Captioning All in One Diffusion Model from Human Brain Activity**<br>
 *Weijian Mai, Zhijun Zhang*<br>
@@ -717,7 +719,16 @@ CVPRW 2023
 [[Paper](https://openaccess.thecvf.com/content/CVPR2023W/GCV/html/Zhou_Vision__Language_Applications_A_Survey_CVPRW_2023_paper.html)]
 [[Code](https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image)]
 
-<br>
+------------------------------------------------------------------------------------------------------
+
+## Our Work
+**UniBrain: Unify Image Reconstruction and Captioning All in One Diffusion Model from Human Brain Activity**<br>
+*Weijian Mai, Zhijun Zhang*<br>
+arxiv 2023
+[[Paper](https://arxiv.org/abs/2308.07428)] <br>
+Dataset [[NSD](#fmri-image)]<br>
+
+------------------------------------------------------------------------------------------------------
 
 ## Citation
 If you use this project for your research, please cite our papers.
