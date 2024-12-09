@@ -1,11 +1,17 @@
+## News 🎉 
+
+The paper associated with this repository has been accepted by IEEE Transactions on Artificial Intelligence! 🚀 
+
+## AI4Neuroscience 🌟 
+
+Over the past year, the AI4Neuro field has witnessed numerous groundbreaking and exciting developments in brain decoding research. Step forward, brain encoding efforts are also gaining momentum and deserve close attention.
+
+We are committed to curating and updating the latest advancements in this vibrant domain. Together, let’s harness the power of AI to unlock the mysteries of neuroscience! 🧠✨
+
+Stay tuned for continuous updates and contributions to this evolving field! 🚀
+
 # AIGC-Brain
 #### [Brain-Conditional Multimodal Synthesis: A Survey and Taxonomy](https://arxiv.org/abs/2401.00430)
-
-
-🎉 ## News
-
-We are thrilled to announce that our paper associated with this repository has been accepted by IEEE Transactions on Artificial Intelligence! 🚀 
-Moving forward, we are committed to further enhancing this repository with new features, updates, and continued innovation. Stay tuned for more exciting developments! 💡
 
 This project is associated with our survey paper which comprehensively examines the emerging field of AIGC-based brain-conditional multimodal synthesis, termed AIGC-Brain, to delineate the current landscape and future directions.
 <br>
