@@ -6,9 +6,9 @@ The AIGC-Brain survey has been accepted by IEEE Transactions on Artificial Intel
 
 ## Exploring the Frontier of AI and Neuroscience 🚀
 
-Over the past year, the AI4Neuro field has witnessed numerous groundbreaking and exciting developments in brain decoding research. Meanwhile, brain encoding efforts are also gaining momentum and deserve close attention.
+Over the past year, the **AI4Neuro** field has witnessed numerous groundbreaking and exciting progress in **Brain Decoding** research. Meanwhile, **Brain Encoding**, which aims to model and uncover the brain’s intrinsic mechanisms, is rapidly advancing and holds great promise for deepening our understanding of cognitive processes and neural dynamics.
 
-We are committed to curating and updating the latest advancements in this vibrant domain. Together, let’s harness the power of AI to unlock the mysteries of neuroscience! 🧠✨
+We are committed to curating and updating the latest advancements in **AI4Neuro** domain. Together, let’s harness the power of AI to unlock the mysteries of neuroscience! 🧠✨
 
 Stay tuned for continuous updates and contributions to this evolving field! 🌟
 
